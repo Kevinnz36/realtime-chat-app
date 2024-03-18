@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import "./App.css";
 import { Chat } from "./components/Chat";
 
-const serverUrl = "https://realtime-chat-sv.vercel.app/";
+const serverUrl = "https://realtime-chat-app-lqae.onrender.com";
 const socket = io.connect(serverUrl);
 
 function App() {
