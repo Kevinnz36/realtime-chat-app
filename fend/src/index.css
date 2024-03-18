@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('./assets/fonts/PatrickHand-Regular.ttf') format('truetype');
+}
+
+:root {
+  background-image: repeating-linear-gradient(0deg, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.1) 1px, transparent 1px, transparent);
+  background-size: 35px 35px;
+  background-color: #eeeeee;
+}
+
+body {
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
