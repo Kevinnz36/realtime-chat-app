@@ -3,8 +3,7 @@ import io from "socket.io-client";
 import "./App.css";
 import { Chat } from "./components/Chat";
 
-const serverUrl = "https://realtime-chat-app-lqae.onrender.com";
-const socket = io.connect(serverUrl);
+const socket = io.connect("http://localhost:3001");
 
 function App() {
   const [userName, setUserName] = useState("");
