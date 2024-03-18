@@ -7,9 +7,9 @@ const cors = require('cors');
 const { Server } = require('socket.io');
 
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
-  methods: ['GET', 'POST']
-}));
+    origin: ['https://realtime-chat-k36.netlify.app', 'http://localhost:5173'],
+    methods: ['GET', 'POST']
+  }));
 
 const server = http.createServer(app);
 const io = new Server(server);
